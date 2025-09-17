@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "autoTrigger": {
+    "onPullRequest": true,
+    "onPush": false
+  },
+  "filePatterns": {
+    "include": ["**/*.py", "**/*.js", "**/*.ts", "**/*.tsx", "**/*.jsx"],
+    "exclude": ["**/node_modules/**", "**/venv/**", "**/__pycache__/**", "**/test/**", "**/tests/**"]
+  },
+  "performance": {
+    "timeoutSeconds": 300,
+    "maxFileSizeKB": 1000
+  },
+  "reviewSettings": {
+    "focusAreas": ["code-quality", "security", "performance", "maintainability"],
+    "severity": "medium"
+  }
+}
